@@ -35,7 +35,7 @@ for candidate_name in candidate_votes:
 #winner of election
 winner = max(candidate_votes, key=candidate_votes.get)
 
-#results printed
+#print results
 print("Election Results")
 print("-------------------------")
 print(f"Total Votes: {total_votes}")
@@ -45,7 +45,7 @@ for candidate_name in candidate_votes:
 print("-------------------------")
 print(f"Winner: {winner}")
 print("-------------------------")
-#export results to a text file
+#put into text file
 with open("election_results.txt", "w") as f:
     f.write("Election Results\n")
     f.write("-------------------------\n")
